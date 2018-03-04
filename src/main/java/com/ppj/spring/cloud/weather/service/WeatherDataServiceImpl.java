@@ -43,6 +43,7 @@ public class WeatherDataServiceImpl implements WeatherDataService{
         if(respString.getStatusCodeValue() == 200){
             strBody = respString.getBody();
         }
+
         try {
             resp = mapper.readValue(strBody,WeatherResponse.class);
         } catch (Exception e){
