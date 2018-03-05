@@ -6,12 +6,13 @@ import org.springframework.util.StringUtils;
 import javax.servlet.http.HttpServletRequest;
 
 public class IpUtil {
+
     /**
      * 获取Ip地址
      * @param request
      * @return
      */
-    private static String getIpAdrress(HttpServletRequest request) {
+    public static String getIpAdrress(HttpServletRequest request) {
         String Xip = request.getHeader("X-Real-IP");
         String XFor = request.getHeader("X-Forwarded-For");
         if(StrUtil.isNotEmpty(XFor) && !"unKnown".equalsIgnoreCase(XFor)){
@@ -45,9 +46,6 @@ public class IpUtil {
         return XFor;
     }
 
-    public void testSomething(){
-
-    }
 
 
 }
