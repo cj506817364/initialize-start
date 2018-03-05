@@ -93,7 +93,6 @@ import java.util.List;
  */
 @Data
 public class Weather implements Serializable {
-
     private String shidu;//湿度
     private int pm25;//pm2.5
     private int pm10;//pm1.0
@@ -102,6 +101,5 @@ public class Weather implements Serializable {
     private String ganmao;//感冒
     private Yesterday yesterday;//昨日天气
     private List<Forecast> forecast;//预测
-
 
 }

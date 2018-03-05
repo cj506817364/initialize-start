@@ -3,5 +3,5 @@ server:
   error:
     path: /errore
   servlet:
-    context-path: /
+    context-path: /init
 

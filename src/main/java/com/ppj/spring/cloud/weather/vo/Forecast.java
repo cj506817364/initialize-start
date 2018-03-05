@@ -30,4 +30,5 @@ public class Forecast  implements Serializable {
     private String fl;//风力
     private String type;//天气类型
     private String notice;//提示
+
 }

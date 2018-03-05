@@ -1,8 +1,13 @@
 package com.ppj.spring.cloud.weather.vo;
 
+
+
 import lombok.Data;
 
+import java.util.Date;
+
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 天气数据响应对象
@@ -16,4 +21,5 @@ public class WeatherResponse  implements Serializable {
     private String city;//城市
     private Integer count;//
     private Weather data;//天气数据
+
 }
