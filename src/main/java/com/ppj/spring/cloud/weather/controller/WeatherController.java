@@ -18,9 +18,6 @@ public class WeatherController {
 
     @RequestMapping("/cityName/{cityName}")
     public WeatherResponse hello(@PathVariable String cityName){
-        WeatherResponse we = new WeatherResponse();
-        we.setCity("wuhan");
-        System.out.println(we.getCity());
         return weatherDataService.getDataByCityName(cityName);
     }
 
