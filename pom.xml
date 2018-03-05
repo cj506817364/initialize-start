@@ -42,12 +42,11 @@
 			<version>4.0.5</version>
 		</dependency>
 
+		<!-- lombok 注解生成JavaBean -->
 		<dependency>
-			<groupId>de.plushnikov.lombok-intellij-plugin</groupId>
-			<artifactId>lombok-plugin</artifactId>
-			<version>0.5</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>
