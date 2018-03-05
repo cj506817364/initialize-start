@@ -38,8 +38,8 @@
 
 		<dependency>
 			<groupId>cn.hutool</groupId>
-			<artifactId>hutool-db</artifactId>
-			<version>4.0.5</version>
+			<artifactId>hutool-all</artifactId>
+			<version>4.0.6</version>
 		</dependency>
 
 		<!-- lombok 注解生成JavaBean -->
