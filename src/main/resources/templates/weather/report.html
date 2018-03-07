@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>皮皮今的天气预报</title>
+</head>
+<body>
+    <h3 th:text="${reportModel.title}">皮皮今</h3>
+    <select>
+        <option th:each="city: ${reportModel.cityList}" th:value="${city}" th:text="${city}" th:selected="${city eq reportModel.cityName}"/>
+    </select>
+    <h1 th:text="${reportModel.cityName}">城市名称</h1>
+    <p>
+        湿度：<span th:text="${reportModel.report.shidu}"></span>
+    </p>
+    <p>
+        pm2.5：<span th:text="${reportModel.report.pm25}"></span>
+    </p>
+    <p>
+        pm1.0：<span th:text="${reportModel.report.pm10}"></span>
+    </p>
+    <p>
+        天气质量：<span th:text="${reportModel.report.quality}"></span>
+    </p>
+    <p>
+        温度：<span th:text="${reportModel.report.wendu}"></span>
+    </p>
+    <p>
+        温馨提示：<span th:text="${reportModel.report.ganmao}"></span>
+    </p>
+    <p>
+        昨日天气：<span th:text="${reportModel.report.yesterday}"></span>
+    </p>
+    <div th:each="forecast : ${reportModel.report.forecast}" >
+        <div>
+            <p th:text="${forecast.date}">日期</p>
+            <p th:text="${forecast.sunrise}">太阳生气时间</p>
+            <p th:text="${forecast.high}">最高温</p>
+            <p th:text="${forecast.low}">最低温</p>
+            <p th:text="${forecast.sunset}">太阳落下时间</p>
+            <p th:text="${forecast.aqi}"></p>
+            <p th:text="${forecast.fx}">风向</p>
+            <p th:text="${forecast.fl}">风力</p>
+            <p th:text="${forecast.type}">天气类型</p>
+            <p th:text="${forecast.notice}">提示</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,6 +4,6 @@ server:
     path: /errore
   servlet:
     context-path: /init
-
-
-
+spring:
+  thymeleaf:
+    cache: false

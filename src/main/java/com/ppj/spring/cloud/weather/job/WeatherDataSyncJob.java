@@ -13,6 +13,6 @@ public class WeatherDataSyncJob extends QuartzJobBean{
 
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        log.info("Weather Data Sync Job.");
+//        log.info("Weather Data Sync Job.");
     }
 }
